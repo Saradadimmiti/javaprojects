@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	
+	<!-- <bean id="loggingAspect" class="com.aop.beans.LoggingAspect"></bean>
+
+	<bean id="secAspect" class="com.aop.beans.SecurityAspect"></bean>
+
+	<bean id="mathBean" class="com.aop.beans.MathBean" />
+
+	<bean id="loanBean" class="com.aop.beans.LoanCalculator" />
+
+	<bean id="otpBean" class="com.aop.beans.OtpGenerationBean" />
+
+	<bean id="throwableBean" class="com.aop.beans.Throwerclass" />
+
+	<bean id="weakcheckerAspect" class="com.aop.beans.WeakCheckerAspect" />
+
+	<bean id="throwsAspect" class="com.aop.beans.ThrowsAspect" />
+
+	<aop:config>
+
+		<aop:pointcut expression="execution(* com.aop.beans.MathBean.add(..))"
+			id="loggingPc" />
+
+		<aop:pointcut expression="execution(* com.aop.beans.LoanCalculator.*(..))"
+			id="secPc" />
+
+		<aop:pointcut expression="execution(* com.aop.beans.OtpGenerationBean.*(..))"
+			id="checkerPc" />
+
+		<aop:pointcut expression="execution(* com.aop.beans.Throwerclass.*(..))"
+			id="throwablePc" />
+
+
+		<aop:aspect id="logAspect" ref="loggingAspect">
+
+			<aop:around method="log" pointcut-ref="loggingPc" />
+		</aop:aspect>
+
+		<aop:aspect ref="secAspect">
+			<aop:before method="checkLogin" pointcut-ref="secPc" />
+		</aop:aspect>
+
+		<aop:aspect ref="weakcheckerAspect">
+
+			<aop:after-returning method="checker"
+				pointcut-ref="checkerPc" returning="key" />
+
+
+		</aop:aspect>
+
+		<aop:aspect ref="throwsAspect">
+			<aop:after-throwing method="handleException"
+				throwing="e" pointcut-ref="throwablePc" />
+
+		</aop:aspect>
+
+
+
+	</aop:config>
+ -->
+
+<bean id="mathBean" class="com.aop.beans.MathBean" />
+
+<bean id="aspect" class="com.aop.beans.AnnotationLoggerAspect" />
+
+<aop:aspectj-autoproxy/>
+
+
+
+
+
+
+</beans>
+
+	

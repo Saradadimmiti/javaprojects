@@ -1,0 +1,5 @@
+package annotaton;
+
+public class MyAnnotation1 {
+
+}

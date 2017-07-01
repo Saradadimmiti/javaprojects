@@ -1,0 +1,9 @@
+package annotaton;
+
+public class Dog extends Animal{
+	@Override
+	void eatSomething(){
+		System.out.println("Dog eating somethings");
+	}
+
+}

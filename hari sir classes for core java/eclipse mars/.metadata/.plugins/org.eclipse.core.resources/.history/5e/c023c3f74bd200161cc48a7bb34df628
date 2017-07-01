@@ -1,0 +1,9 @@
+package annotaton;
+ //} = + ] ' " 
+public class MyAnnotation1 {
+	@MyAnnotation(value=19)
+	public void sayHello(){
+		System.out.println("welcome to hello");
+	}
+
+}

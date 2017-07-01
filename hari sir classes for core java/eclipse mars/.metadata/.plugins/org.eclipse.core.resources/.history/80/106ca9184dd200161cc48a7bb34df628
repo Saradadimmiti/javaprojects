@@ -1,0 +1,13 @@
+package annotaton;
+ //} = + ] ' " 
+public class MyAnnotation1 {
+	@MyAnnotation(value=19)
+	public void sayHello(){
+		System.out.println("welcome to hello");
+	}
+	public static void main(String[] args) {
+		MyAnnotation1 mann=new MyAnnotation1();
+	Method m=mann.getClass().getMethods("sayHello").getAnnotation("MyAnnotation")
+	}
+
+}

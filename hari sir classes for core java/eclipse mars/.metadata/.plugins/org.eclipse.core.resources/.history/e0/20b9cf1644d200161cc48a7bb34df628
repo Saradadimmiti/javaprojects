@@ -1,0 +1,9 @@
+package annotaton;
+
+public class Dog extends Animal{
+	
+	void eatsomething(){
+		System.out.println("Dog eating somethings");
+	}
+
+}
